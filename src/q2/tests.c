@@ -20,6 +20,15 @@ void runTests(){
   deleteAfter(l);
   traverse(l);
   printf("\n");
+    
+    /////////////////////// My tests
+    
+    //test length
+    length(l);
+    
+    //test push
+    
+    
 
   printf("\nTests complete.\n");
 }

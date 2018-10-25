@@ -57,5 +57,40 @@ void deleteAfter(listElement* after){
   after->next = newNext;
   //need to free the memory because we used malloc
   free(delete->data);
-  free(delete);
+  free(delete);    
 }
+
+///////////////////////////////////////////
+
+//Returns the number of elements in a linked list.
+int length(listElement* list){
+    
+    int count = 0;  
+    listElement* current = list;  
+    while (current->next != NULL) 
+    { 
+        count++;
+        current = current->next; 
+    } 
+    return count;  
+}
+
+//Push a new element onto the head of a list. Update the //list reference using side effects.(See: swap() from //lecture 3) 
+void push(listElement** list, char* data, size_t size){
+    
+    swap(void* x, void* y){
+        void temp = *x;
+        *x = *y;
+        *y = temp;
+    }
+    
+    //list->next
+        
+        //todo
+}
+
+//Pop an element from the head of a list. Update the list //reference using side effects. 
+listElement* pop(listElement** list){
+    
+}
+  
